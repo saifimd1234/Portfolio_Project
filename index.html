@@ -20,23 +20,25 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
+    
+    <nav id="hamburger-nav"></nav>
         <div class="logo">Mohammad Saifi</div>
         <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-      </div>      <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
     </nav>
+    
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Mohammad Saifi profile picture" />
@@ -45,10 +47,9 @@
             <p class="section__text__p1">Welcome to my portfolio! I am glad to share my work with you.</p>
             <h1 class="title">Mohammad Saifi</h1>
             <p class="section__text__p2">Here you can find my latest projects and professional experiences.</p>
-</section>            <div class="btn-container">
-     </div>           <button 
-                class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                Download Resume
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download Resume
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Me
@@ -56,32 +57,33 @@
             </div>
             <div id="socials-container">
                 <img 
-                src="./assets/linkedin.png" 
-                alt="My LinkedIn profile" 
-                class="icon" 
-                onclick="window.open('https://www.linkedin.com/in/saifimd1234')" 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile" 
+                    class="icon" 
+                    onclick="window.open('https://www.linkedin.com/in/saifimd1234')" 
                 />
                 <img 
-                src="./assets/github.png" 
-                alt="My GitHub profile" 
-                class="icon" 
-                onclick="window.open('https://github.com/saifimd1234')" 
+                    src="./assets/github.png" 
+                    alt="My GitHub profile" 
+                    class="icon" 
+                    onclick="window.open('https://github.com/saifimd1234')" 
                 />
                 <img 
-                src="./assets/leetcode.png" 
-                alt="My LeetCode profile" 
-                class="icon" 
-                onclick="window.open('https://leetcode.com/saifimd1234')" 
+                    src="./assets/leetcode.png" 
+                    alt="My LeetCode profile" 
+                    class="icon" 
+                    onclick="window.open('https://leetcode.com/saifimd1234')" 
                 />
                 <img 
-                src="./assets/hackerrank.png" 
-                alt="My HackerRank profile" 
-                class="icon" 
-                onclick="window.open('https://www.hackerrank.com/saifimd1234')" 
+                    src="./assets/hackerrank.png" 
+                    alt="My HackerRank profile" 
+                    class="icon" 
+                    onclick="window.open('https://www.hackerrank.com/saifimd1234')" 
                 />
             </div>
         </div>
     </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
