@@ -1,342 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link 
-        rel="stylesheet" 
-        href="style.css" 
-    />
-    <link 
-        rel="stylesheet" 
-        href="mediaqueries.css" 
-    />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Mohammad Saifi</div>
-        <div>
-            <ul class="nav-links">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#certifications">Certifications</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <div class="logo">Mohammad Saifi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </div>
     </nav>
-    
     <nav id="hamburger-nav">
-        <div class="logo">Mohammad Saifi</div>
-        <div class="hamburger-menu">
-            <div 
-                class="hamburger-icon" 
-                onclick="toggleMenu()"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="logo">Mohammad Saifi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          
+        </div>
+      </div>
     </nav>
-    <div class="menu-links">
-        <li>
-            <a 
-                href="#about" 
-                onclick="toggleMenu()"
-            >
-                About
-            </a>
-        </li>
-        <li>
-            <a 
-                href="#experience" 
-                onclick="toggleMenu()"
-            >
-                Experience
-            </a>
-        </li>
-        <li>
-            <a 
-                href="#projects" 
-                onclick="toggleMenu()"
-            >
-                Projects
-            </a>
-        </li>
-        <li>
-            <a 
-                href="#certifications" 
-                onclick="toggleMenu()"
-            >
-                Certifications
-            </a>
-        </li>
-        <li>
-            <a 
-                href="#contact" 
-                onclick="toggleMenu()"
-            >
-                Contact
-            </a>
-        </li>
-    </div>
-    
     <section id="profile">
-        <div class="section__pic-container">
-            <img 
-                src="./assets/profile-pic.png" 
-                alt="Mohammad Saifi profile picture" 
-            />
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Mohammad Saifi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohammad Saifi</h1>
+        <p class="section__text__p2">...a Data Enthusiast!</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">Mohammad Saifi</h1>
-            <p class="section__text__p2">
-                Here you can find my latest projects and professional experiences.
-            </p>
-            <p class="section__text__p2">
-                Feel free to explore my work and reach out.
-            </p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2" 
-                    onclick="window.open('./assets/resume-example.pdf')"
-                >
-                    Download CV
-                </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'"
-                >
-                    Contact Me
-                </button>
-            </div>
-            <div id="socials-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="My LinkedIn profile" 
-                    class="icon" 
-                    onclick="window.open('https://www.linkedin.com/in/saifimd1234')" 
-                />
-                <img 
-                    src="./assets/github.png" 
-                    alt="My GitHub profile" 
-                    class="icon" 
-                    onclick="window.open('https://github.com/saifimd1234')" 
-                />
-                <img 
-                    src="./assets/leetcode.png" 
-                    alt="My LeetCode profile" 
-                    class="icon" 
-                    onclick="window.open('https://leetcode.com/saifimd1234')" 
-                />
-                <img 
-                    src="./assets/hackerrank.png" 
-                    alt="My HackerRank profile" 
-                    class="icon" 
-                    onclick="window.open('https://www.hackerrank.com/saifimd1234')" 
-                />
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
         </div>
+      </div>
     </section>
-    
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                    src="./assets/about-pic.png" 
-                    alt="Mohammad Saifi profile picture" 
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png"  
-                            alt="Experience icon" 
-                            class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>2+ years <br /> Frontend Experience</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.png"  
-                            alt="Education icon" 
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>Bachelor's Degree <br /> Computer Science</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I am a data analyst. My interests include machine learning, data visualization, and statistical analysis. I thrive in collaborative environments and enjoy tackling complex data challenges.
-                    </p>
-                    <p>
-                        My technical skills include Python, SQL, Tableau, and Excel. I am also familiar with machine learning algorithms and data visualization techniques.
-                    </p>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onclick="location.href='./#experience'"
-        />
-    </section>
-    
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
+        <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>SASS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>TypeScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Material UI</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
             </div>
             <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PostgreSQL</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Express JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+      
+          <!-- Databases Section -->
+          <div class="skills-box">
+            <h2>
+              Databases 
+              <img src="./assets/database-icon.png" alt="Database Icon" class="skill-icon" />
+            </h2>
+            <div class="sub-skills">
+              <div class="sub-skill">
+                <img src="./assets/mysql1.png" alt="MySQL Icon" class="sub-skill-icon" />
+                <h3>MySQL</h3>
               </div>
+              <div class="sub-skill">
+                <img src="./assets/postgresql.png" alt="PostgreSQL Icon" class="sub-skill-icon" />
+                <h3>PostgreSQL</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/mssql.png" alt="MS SQL Server Icon" class="sub-skill-icon" />
+                <h3>MS SQL Server</h3>
+              </div>
+            </div>
+            <p><strong>Key Skills:</strong> SQL Queries, Joins & Subqueries, Window Functions, Aggregate Functions, Indexing & Optimization, Stored Procedures & Views, CTEs, Data Cleaning & Transformation.</p>
+          </div>
+      
+          <!-- Data Visualization Section -->
+          <div class="skills-box">
+            <h2>
+              Data Visualization
+              <img src="./assets/dataviz-icon.png" alt="Data Viz Icon" class="skill-icon" />
+            </h2>
+            <div class="sub-skills">
+              <div class="sub-skill">
+                <img src="./assets/ms-excel.png" alt="Excel Icon" class="sub-skill-icon" />
+                <h3>Excel</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/tableau.png" alt="Tableau Icon" class="sub-skill-icon" />
+                <h3>Tableau</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/powerbi.png" alt="Power BI Icon" class="sub-skill-icon" />
+                <h3>Power BI</h3>
+              </div>
+            </div>
+            <p><strong>Key Skills:</strong> Pivot Tables, Power Query, Dashboarding, Data Storytelling, Interactive Reports.</p>
+          </div>
+      
+          <!-- Programming & Scripting Section -->
+          <div class="skills-box">
+            <h2>
+              Programming & Scripting
+              <img src="./assets/programming-icon.png" alt="Programming Icon" class="skill-icon" />
+            </h2>
+            <div class="sub-skills">
+                <div class="sub-skill">
+                    <img src="./assets/python.png" alt="Python Icon" class="sub-skill-icon" />
+                    <h3>Python</h3>
+                  </div>
+              <div class="sub-skill">
+                <img src="./assets/pandas.png" alt="Pandas Icon" class="sub-skill-icon" />
+                <h3>Pandas</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/numpy.png" alt="NumPy Icon" class="sub-skill-icon" />
+                <h3>NumPy</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/matplotlib.png" alt="Matplotlib Icon" class="sub-skill-icon" />
+                <h3>Matplotlib</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/seaborn.png" alt="Seaborn Icon" class="sub-skill-icon" />
+                <h3>Seaborn</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/sklearn.png" alt="Scikit-learn Icon" class="sub-skill-icon" />
+                <h3>Scikit-learn</h3>
+              </div>
+            </div>
+            <p><strong>Key Skills:</strong> Data Manipulation, Data Visualization, Statistical Analysis, Machine Learning Basics.</p>
+          </div>
+      
+          <!-- Cloud & Version Control Section -->
+          <div class="skills-box">
+            <h2>
+              Cloud & Version Control
+              <img src="./assets/cloud-icon.png" alt="Cloud Icon" class="skill-icon" />
+            </h2>
+            <div class="sub-skills">
+              <div class="sub-skill">
+                <img src="./assets/aws.png" alt="AWS Icon" class="sub-skill-icon" />
+                <h3>AWS</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/git.png" alt="Git Icon" class="sub-skill-icon" />
+                <h3>Git</h3>
+              </div>
+              <div class="sub-skill">
+                <img src="./assets/github.png" alt="GitHub Icon" class="sub-skill-icon" />
+                <h3>GitHub</h3>
+              </div>
+            </div>
+            <p><strong>Key Skills:</strong> Cloud Basics, Version Control, Code Collaboration.</p>
+          </div>
+      
+        
+      <!-- Communication & Other Skills Section -->
+<div class="skills-box">
+    <h2>
+      Communication & Other Skills
+      <img src="./assets/communication-icon.png" alt="Communication Icon" class="skill-icon" />
+    </h2>
+    <div class="sub-skills">
+      <div class="sub-skill">
+        <img src="./assets/communication.png" alt="Communication Icon" class="sub-skill-icon" />
+        <h3>Business Communication</h3>
+      </div>
+      <div class="sub-skill">
+        <img src="./assets/presentation.png" alt="Presentation Icon" class="sub-skill-icon" />
+        <h3>Presentation & Storytelling</h3>
+      </div>
+      <div class="sub-skill">
+        <img src="./assets/critical-thinking.png" alt="Critical Thinking Icon" class="sub-skill-icon" />
+        <h3>Critical Thinking</h3>
+      </div>
+      <div class="sub-skill">
+        <img src="./assets/teamwork.png" alt="Teamwork Icon" class="sub-skill-icon" />
+        <h3>Team Collaboration</h3>
+      </div>
+      <div class="sub-skill">
+        <img src="./assets/time-management.png" alt="Time Management Icon" class="sub-skill-icon" />
+        <h3>Time Management</h3>
+      </div>
+      <div class="sub-skill">
+        <img src="./assets/adaptability.png" alt="Adaptability Icon" class="sub-skill-icon" />
+        <h3>Adaptability</h3>
+      </div>
+    </div>
+    <p><strong>Key Skills:</strong> Communication, Data Storytelling, Problem-Solving, Stakeholder Interaction, Collaboration, Time Management, Continuous Learning.</p>
+  </div>
+</div>
+</section>
+    
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-      </section>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
 
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Mohammad Saifi. All Rights Reserved.</p>
+      <p>Follow me on social media for updates!</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
