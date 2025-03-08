@@ -583,8 +583,8 @@ footer p {
 }
 
 .skill-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .sub-skills {
@@ -592,6 +592,9 @@ footer p {
   justify-content: center;
   gap: 15px;
   margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
   flex-wrap: wrap;
 }
 
@@ -602,6 +605,6 @@ footer p {
 }
 
 .sub-skill-icon {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
