@@ -102,3 +102,21 @@
     }
   }
   
+  /* Responsive adjustments for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    #about .about-container {
+      flex-direction: column;
+    }
+    /* Add extra gap when stacked */
+    #about .about-qualifications {
+      margin-top: 2rem;  /* Gap between introduction and qualifications */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .skills-box {
+      width: 90%;
+      margin: 0 auto; /* centers the box horizontally */
+    }
+  }
+  

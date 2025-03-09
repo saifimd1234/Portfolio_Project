@@ -65,19 +65,31 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
+          <img 
+          src="./assets/linkedin.png" 
+          alt="My LinkedIn profile" 
+          class="icon" 
+          onclick="window.open('https://www.linkedin.com/in/saifimd1234')" 
           />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
+          <img 
+          src="./assets/github.png" 
+          alt="My GitHub profile" 
+          class="icon" 
+          onclick="window.open('https://github.com/saifimd1234')" 
           />
-        </div>
+          <img 
+          src="./assets/leetcode.png" 
+          alt="My LeetCode profile" 
+          class="icon" 
+          onclick="window.open('https://leetcode.com/saifimd1234')" 
+          />
+          <img 
+          src="./assets/hackerrank.png" 
+          alt="My HackerRank profile" 
+          class="icon" 
+          onclick="window.open('https://www.hackerrank.com/saifimd1234')" 
+          />
+      </div>
       </div>
     </section>
     
@@ -85,25 +97,54 @@
         <p class="section__text__p1">Get To Know Me</p>
         <h1 class="title">About Me</h1>
         <div class="about-container">
-          <div class="about-pic">
-            <img src="./assests/about-pic.png" alt="Profile Picture" />
-          </div>
-          <div class="about-details">
+          <!-- Left Column: Introduction -->
+          <div class="about-intro">
             <h2>Hi, I'm Mohammad Saifi</h2>
             <p>
-              I am a passionate Data Analyst with a strong background in Big Data Analytics and Engineering. I hold a Post Graduate Diploma in Big Data Analytics from CDAC Acts, Pune, and my journey has equipped me with advanced skills in SQL, Python, Tableau, and Excel.
+              I am a passionate Data Analyst with a strong background in Big Data Analytics and Engineering.
+              I hold a Post Graduate Diploma in Big Data Analytics from CDAC Acts, Pune, and my journey has
+              equipped me with advanced skills in SQL, Python, Tableau, and Excel.
             </p>
             <p>
-              Beyond technical expertise, I thrive on transforming complex datasets into actionable insights. My projects—from Hospital Quality Analysis to Music Store Data Analysis—demonstrate my ability to uncover hidden trends and drive impactful decisions.
+              Beyond technical expertise, I thrive on transforming complex datasets into actionable insights.
+              My projects—from Hospital Quality Analysis to Music Store Data Analysis—demonstrate my ability to
+              uncover hidden trends and drive impactful decisions.
             </p>
             <p>
               I also value teaching, mentoring, and continuous learning, which help me stay ahead in this fast-paced field.
             </p>
-            <a class="btn btn-color-1" href="./assests/CR_Saifi-Data Analyst-Resume_with_marks_2.pdf" target="_blank">View Resume</a>
+            <a class="btn btn-color-1" href="./assests/CR_Saifi-Data Analyst-Resume_with_marks_2.pdf" target="_blank">
+              View Resume
+            </a>
+          </div>
+          <!-- Right Column: Qualifications -->
+          <div class="about-qualifications">
+            <h3>Education</h3>
+            <ul>
+              <li>
+                <strong>PG Diploma in Big Data Analytics</strong> – CDAC Acts, Pune 
+                <em>(03/2024 – 09/2024)</em><br>
+                Majors: Data Collection and DBMS, Python, Data Visualization – Analysis and Reporting,
+                Practical Machine Learning, Advanced Analytics, Linux Programming and Cloud Computing
+              </li>
+              <li>
+                <strong>Bachelor of Engineering</strong> – RVS College of Engineering and Technology, Jamshedpur 
+                <em>(06/2020 – 07/2023)</em>
+              </li>
+              <li>
+                <strong>Diploma</strong> – Al-Kabir Polytechnic, Jamshedpur 
+                <em>(06/2015 – 07/2018)</em>
+              </li>
+              <li>
+                <strong>Matriculate</strong> – Kerela Public School, Jamshedpur 
+                <em>(03/2008 – 03/2015)</em>
+              </li>
+            </ul>
           </div>
         </div>
         <img src="./assests/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'" />
       </section>
+      
       
     
     <section id="skills">
@@ -130,7 +171,9 @@
                 <h3>MS SQL Server</h3>
               </div>
             </div>
-            <p><strong>Key Skills:</strong> SQL Queries, Joins & Subqueries, Window Functions, Aggregate Functions, Indexing & Optimization, Stored Procedures & Views, CTEs, Data Cleaning & Transformation.</p>
+            <div class="skills-description">
+              <p><strong>Key Skills:</strong> SQL Queries, Joins & Subqueries, Window Functions, Aggregate Functions, Indexing & Optimization, Stored Procedures & Views, CTEs, Data Cleaning & Transformation.</p>
+            </div>
           </div>
       
           <!-- Data Visualization Section -->
@@ -153,7 +196,9 @@
                 <h3>Power BI</h3>
               </div>
             </div>
-            <p><strong>Key Skills:</strong> Pivot Tables, Power Query, Dashboarding, Data Storytelling, Interactive Reports.</p>
+            <div class="skills-description">
+              <p><strong>Key Skills:</strong> Pivot Tables, Power Query, Dashboarding, Data Storytelling, Interactive Reports.</p>
+            </div>
           </div>
       
           <!-- Programming & Scripting Section -->
@@ -188,7 +233,9 @@
                 <h3>Scikit-learn</h3>
               </div>
             </div>
-            <p><strong>Key Skills:</strong> Data Manipulation, Data Visualization, Statistical Analysis, Machine Learning Basics.</p>
+            <div class="skills-description">
+              <p><strong>Key Skills:</strong> Data Manipulation, Data Visualization, Statistical Analysis, Machine Learning Basics.</p>
+            </div>
           </div>
       
           <!-- Cloud & Version Control Section -->
@@ -211,7 +258,9 @@
                 <h3>GitHub</h3>
               </div>
             </div>
-            <p><strong>Key Skills:</strong> Cloud Basics, Version Control, Code Collaboration.</p>
+            <div class="skills-description">
+              <p><strong>Key Skills:</strong> Cloud Basics, Version Control, Code Collaboration.</p>
+            </div>
           </div>
       
         
@@ -369,7 +418,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:saifimd1234@gmail.com">saifimd1234@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -377,7 +426,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/saifimd1234">LinkedIn</a></p>
         </div>
       </div>
     </section>
