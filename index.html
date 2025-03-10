@@ -283,56 +283,77 @@
   </section>
   
 
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="projects-container">
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    
+    <!-- Main container for all projects -->
+    <div class="project-template">
       
-          <!-- Project Card: Phishing Website Detection -->
-           <div class="project-item">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="Projects_intro\network_security\network_security1.jpeg" alt="Phishing Website Detection" />
-            </div>
-            <div class="project-details">
-              <h2 class="project-title">Phishing Website Detection 🛡️</h2>
-              <p class="project-date">July 2024</p>
-              <p class="project-description">
-                An end-to-end machine learning project that identifies phishing websites by analyzing various URL-based features. The project implements a robust ML pipeline—from data ingestion and validation to transformation, model training, and deployment—ensuring a scalable, production-ready solution for real-time phishing detection.
-              </p>
-              <div class="project-links">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saifimd1234/ML_network_security'">GitHub</button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://yourlivedemourl.com'">In Depth</button>
-              </div>
-            </div>
+      <!-- Single Project Container -->
+      <div class="project fade-in">
+        
+        <!-- Phishing Website Detection -->
+        <div class="project-title">
+          <h2>Phishing Website Detection 🛡️</h2>
+        </div>
+        
+        <!-- Project Image -->
+        <div class="project-image">
+          <img src="Projects_intro\network_security\network_security1.jpeg" alt="Phishing Website Detection">
+        </div>
+        
+        <!-- Project Brief Description -->
+        <div class="project-description">
+          <p>
+            An end-to-end machine learning project that identifies phishing websites by analyzing various URL-based features. The project implements a robust ML pipeline—from data ingestion and validation to transformation, model training, and deployment—ensuring a scalable, production-ready solution for real-time phishing detection.
+          </p>
+        </div>
+        
+        <!-- Skills Covered -->
+        <div class="project-skills">
+          <h3>Skills Covered:</h3>
+          <div class="skill-list">
+            <!-- These skill items can be added or removed as needed -->
+            <div class="skill-item">Machine Learning</div>    
+                <div class="skill-item">Python</div>  
+                <div class="skill-item">Pandas & NumPy</div>  
+                <div class="skill-item">Scikit-learn</div>
+                <div class="skill-item">Model Deployment (Flask/FastAPI)</div>  
+                <div class="skill-item">XGBoost</div>  
+                <div class="skill-item">Docker</div>  
+                <div class="skill-item">AWS S3</div>
+                <div class="skill-item">AWS ECR</div>
+                <div class="skill-item">AWS EC2</div>  
+                <div class="skill-item">CI/CD (GitHub Actions)</div>  
+                <div class="skill-item">Data Preprocessing</div>  
+                <div class="skill-item">Feature Engineering</div>  
+                <div class="skill-item">Hyperparameter Tuning</div>  
+                <div class="skill-item">Classification Algorithms</div>  
+                <div class="skill-item">Cybersecurity Analytics</div>  
+                <div class="skill-item">Phishing Detection</div>  
+                <div class="skill-item">Data Visualization</div>  
+                <div class="skill-item">Git Version Control</div>  
+                <div class="skill-item">Automated Data Validation</div>  
+            <!-- Add more skill items as required -->
           </div>
         </div>
-      
-          <!-- Project Card: Music Store Data Analysis using SQL -->
-        <div class="project-item">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="Projects_intro\SQL_music_store\music_store.jpeg" alt="Music Store Data Analysis" />
-            </div>
-            <div class="project-details">
-              <h2 class="project-title">Music Store Data Analysis using SQL</h2>
-              <p class="project-date">June 2024</p>
-              <p class="project-description">
-                A comprehensive data analysis project that leverages SQL querying techniques to extract actionable insights from a music store database. The project uncovers key metrics such as customer spending patterns, popular genres, high-earning artists, and top sales cities through queries ranging from basic retrievals to advanced aggregations and window functions.
-              </p>
-              <div class="project-links">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saifimd1234/Music-Store-SQL-Analysis'">GitHub</button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://yourlivedemourl.com'">In Depth</button>
-              </div>
-            </div>
-          </div>
+        
+        <!-- Buttons for GitHub and In-Depth details -->
+        <div class="project-buttons">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/saifimd1234/ML_network_security'">GitHub</button>
+          <button class="btn btn-color-2" onclick="location.href='in-depth-page.html'">In Depth</button>
         </div>
-
-          <!-- Add more project cards here following the same structure -->
+        
+      </div>
+      <!-- End of Single Project Container -->
       
-        </div>
-        <img src="./assests/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'" />
-      </section>
+      <!-- Repeat the above .project div for each additional project -->
+      
+    </div>
+    
+  </section>
+  
       
       <section id="certifications">
         <p class="section__text__p1">Showcase My</p>

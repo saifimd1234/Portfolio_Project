@@ -736,3 +736,134 @@ footer p {
   color: #555;
 }
 
+/* PROJECT TEMPLATE STYLES */
+
+/* Main container for the projects section */
+#projects .project-template {
+  display: flex;
+  flex-direction: column;  /* Stack projects one below the other */
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Single Project Container */
+#projects .project {
+  background: #f9f9f9;
+  border: 1px solid #a3a3a3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0; /* Start hidden for fade-in effect */
+}
+
+/* Fade-in animation (applied on page load) */
+#projects .project.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Project Title */
+.project-title h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Project Image */
+.project-image {
+  max-width: 500px;      /* Maximum width */
+  max-height: 300px;     /* Maximum height */
+  margin: 0 auto;        /* Center the container if needed */
+  overflow: hidden;      /* Hide any overflow if the image is larger */
+}
+
+.project-image img {
+  width: 100%;           /* Make the image fill the container's width */
+  height: auto;          /* Keep aspect ratio */
+  object-fit: cover;     /* Option: "cover" ensures it fills the container */
+}
+
+
+/* Project Description */
+.project-description {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Project Skills */
+.project-skills {
+  margin-bottom: 1rem;
+}
+.project-skills h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skill-item {
+  background: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Project Buttons */
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.project-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.project-buttons .btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  #projects .project {
+    padding: 1rem;
+  }
+  .project-title h2 {
+    font-size: 1.75rem;
+  }
+  .project-description {
+    font-size: 0.95rem;
+  }
+  .project-skills h3 {
+    font-size: 1.3rem;
+  }
+  .project-buttons .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+.skill-item {
+  background: #e0e0e0;       /* Base background color */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #ffb74d;       /* New background on hover */
+  transform: scale(1.05);    /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
