@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algerian Forest Fire Prediction 🔥</title>
+  <link rel="stylesheet" href="../style.css" /> <!-- External stylesheet if available -->
+  <style>
+    /* Reset and Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+    /* Sticky Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(18, 18, 18, 0.85);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      transition: background 0.3s ease;
+    }
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+    /* Header Section with Parallax Background */
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('path/to/your/background.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header h1, header p, header .btn-group {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out forwards;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Button Styles */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #f39c12;
+      color: #121212;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin: 5px;
+    }
+    .btn:hover {
+      background: #e67e22;
+      transform: scale(1.05);
+    }
+    /* Main Content Sections */
+    main {
+      padding: 80px 20px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #f39c12;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #e67e22;
+    }
+    .section p, .section li {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+    .section ul, .section ol {
+      margin-left: 20px;
+    }
+    /* Code Snippet Styling */
+    pre {
+      background: #2c3e50;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+    }
+    code {
+      font-family: 'Courier New', monospace;
+    }
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo"><a href="../index.html">MyPortfolio</a></div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#eda">EDA</a>
+      <a href="#fe">FE</a>
+      <a href="#model">Model</a>
+      <a href="#flask">Flask</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Algerian Forest Fire Prediction 🔥</h1>
+    <p>Unleashing ML to predict and combat forest fires!</p>
+    <div class="btn-group">
+      <a href="https://github.com/saifimd1234/AlgerianForestFireML_Project.git" target="_blank" class="btn">GitHub 💻</a>
+      <a href="#overview" class="btn">Explore Project 📚</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Overview Section -->
+    <section id="overview" class="section">
+      <h2>Overview 🌟</h2>
+      <p>
+        The Algerian Forest Fire Prediction project forecasts the likelihood and severity of forest fires in Algeria. Leveraging historical weather data, advanced EDA, and machine learning models deployed via Flask, this project offers an innovative approach to wildfire prediction.
+      </p>
+      <h3>Key Objectives 🎯</h3>
+      <ul>
+        <li>Identify key factors influencing forest fires in Algeria.</li>
+        <li>Conduct comprehensive Exploratory Data Analysis (EDA).</li>
+        <li>Engineer features to boost model performance.</li>
+        <li>Deploy the predictive model using a user-friendly Flask app.</li>
+      </ul>
+    </section>
+
+    <!-- EDA Section -->
+    <section id="eda" class="section">
+      <h2>Exploratory Data Analysis (EDA) 🔍</h2>
+      <ol>
+        <li><strong>Data Cleaning:</strong> Detect and handle missing values and outliers.</li>
+        <li><strong>Data Exploration:</strong> Generate summary statistics and visualize data with histograms, box plots, and heatmaps.</li>
+        <li><strong>Outlier Detection:</strong> Use methods like Z-score and box plots to pinpoint anomalies.</li>
+        <li><strong>Insights:</strong> Differentiate between categorical and numerical data to uncover hidden patterns.</li>
+      </ol>
+    </section>
+
+    <!-- Feature Engineering Section -->
+    <section id="fe" class="section">
+      <h2>Feature Engineering (FE) 🔧</h2>
+      <ol>
+        <li><strong>Feature Selection:</strong> Identify impactful features such as FFMC, DMC, temperature, and humidity.</li>
+        <li><strong>Scaling & Normalization:</strong> Apply StandardScaler or MinMaxScaler for improved model accuracy.</li>
+        <li><strong>Encoding:</strong> Transform categorical variables using label or one-hot encoding.</li>
+        <li><strong>Derived Features:</strong> Create new features (e.g., dryness index) by combining temperature and humidity.</li>
+        <li><strong>Dimensionality Reduction (Optional):</strong> Use techniques like PCA to optimize training speed.</li>
+      </ol>
+    </section>
+
+    <!-- Model Training Section -->
+    <section id="model" class="section">
+      <h2>Model Training & Evaluation 🏋️‍♂️</h2>
+      <ol>
+        <li><strong>Model Selection:</strong> Evaluate algorithms such as Logistic Regression, Random Forest, and XGBoost.</li>
+        <li><strong>Hyperparameter Tuning:</strong> Use GridSearchCV or RandomizedSearchCV for optimal settings.</li>
+        <li><strong>Evaluation Metrics:</strong> Measure performance with accuracy, precision, recall, and F1-score.</li>
+        <li><strong>Cross-Validation:</strong> Implement K-fold cross-validation to ensure robustness.</li>
+      </ol>
+    </section>
+
+    <!-- Flask Web Application Section -->
+    <section id="flask" class="section">
+      <h2>Flask Web Application 🚀</h2>
+      <ul>
+        <li><strong>User Interface:</strong> A simple, interactive form for user data input.</li>
+        <li><strong>Routes:</strong>
+          <ul>
+            <li><strong>Home (/):</strong> Overview with quick access to the form.</li>
+            <li><strong>Predict Data (/predictdata):</strong> Process inputs and return predictions.</li>
+          </ul>
+        </li>
+        <li><strong>Templates:</strong> Responsive HTML templates ensuring a seamless experience.</li>
+      </ul>
+    </section>
+
+    <!-- Installation & Usage Section -->
+    <section id="installation" class="section">
+      <h2>Installation & Usage 🛠️</h2>
+      <pre>
+git clone https://github.com/saifimd1234/AlgerianForestFireML_Project.git
+cd AlgerianForestFireML_Project
+pip install -r requirements.txt
+python application.py
+      </pre>
+      <p>Access the application at <code>http://0.0.0.0:5000/</code></p>
+    </section>
+
+    <!-- Enhancements Section -->
+    <section id="enhancements" class="section">
+      <h2>Potential Enhancements & Ideas 💡</h2>
+      <ul>
+        <li><strong>Interactive Visualizations:</strong> Integrate Plotly or Bokeh for real-time charts.</li>
+        <li><strong>Additional Data Sources:</strong> Incorporate live weather data APIs.</li>
+        <li><strong>Model Comparison Dashboard:</strong> Compare multiple models side-by-side.</li>
+        <li><strong>User Accounts:</strong> Enable saving and tracking of past predictions.</li>
+        <li><strong>Automated Alerts:</strong> Notify users of high-risk predictions via email or SMS.</li>
+        <li><strong>Cloud Deployment:</strong> Containerize using Docker and deploy on AWS, Azure, or Heroku.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with ❤️ by Your Name. Back to <a href="../index.html#projects">Projects</a></p>
+  </footer>
+
+  <!-- JavaScript for Scroll-triggered Animations -->
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const options = { threshold: 0.15 };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
