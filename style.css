@@ -741,7 +741,7 @@ footer p {
 /* Main container for the projects section */
 #projects .project-template {
   display: flex;
-  flex-direction: column;  /* Stack projects one below the other */
+  flex-direction: column; /* Stack projects one below the other */
   gap: 2rem;
   padding: 2rem 0;
 }
@@ -763,7 +763,9 @@ footer p {
 
 /* Keyframes for fadeIn animation */
 @keyframes fadeIn {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Project Title */
@@ -775,18 +777,17 @@ footer p {
 
 /* Project Image */
 .project-image {
-  max-width: 500px;      /* Maximum width */
-  max-height: 300px;     /* Maximum height */
-  margin: 0 auto;        /* Center the container if needed */
-  overflow: hidden;      /* Hide any overflow if the image is larger */
+  max-width: 500px; /* Maximum width */
+  max-height: 300px; /* Maximum height */
+  margin: 0 auto; /* Center the container if needed */
+  overflow: hidden; /* Hide any overflow if the image is larger */
 }
 
 .project-image img {
-  width: 100%;           /* Make the image fill the container's width */
-  height: auto;          /* Keep aspect ratio */
-  object-fit: cover;     /* Option: "cover" ensures it fills the container */
+  width: 100%; /* Make the image fill the container's width */
+  height: auto; /* Keep aspect ratio */
+  object-fit: cover; /* Option: "cover" ensures it fills the container */
 }
-
 
 /* Project Description */
 .project-description {
@@ -813,6 +814,13 @@ footer p {
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #ffb74d; /* New background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
 /* Project Buttons */
@@ -836,34 +844,75 @@ footer p {
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
+  /* Reduce padding and margins for mobile */
   #projects .project {
     padding: 1rem;
   }
+
+  /* Reduce font sizes for mobile */
   .project-title h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem; /* Reduced from 1.75rem */
   }
+
   .project-description {
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* Reduced from 0.95rem */
+    padding-top: 1rem; /* Reduced padding */
   }
+
   .project-skills h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem; /* Reduced from 1.3rem */
   }
+
+  /* Reduce button size for mobile */
   .project-buttons .btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 1rem; /* Reduced padding */
+    font-size: 0.85rem; /* Reduced font size */
+  }
+
+  /* Reduce skill item size for mobile */
+  .skill-item {
+    padding: 0.4rem 0.8rem; /* Reduced padding */
+    font-size: 0.8rem; /* Reduced font size */
+  }
+
+  /* Adjust image size for mobile */
+  .project-image {
+    max-width: 100%; /* Ensure images are responsive */
+    max-height: 200px; /* Reduce height for mobile */
   }
 }
 
-.skill-item {
-  background: #e0e0e0;       /* Base background color */
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+/* Additional Media Query for Smaller Screens */
+@media screen and (max-width: 480px) {
+  /* Further reduce font sizes for very small screens */
+  .project-title h2 {
+    font-size: 1.3rem; /* Even smaller title */
+  }
+
+  .project-description {
+    padding: 0.3rem 0.6rem; 
+    font-size: 0.65rem; /* Further reduced description size */
+  }
+
+  .project-skills h3 {
+    font-size: 1.1rem; /* Further reduced skills heading size */
+  }
+
+  /* Further reduce button size */
+  .project-buttons .btn {
+    padding: 0.5rem 0.8rem; /* Reduced padding */
+    font-size: 0.8rem; /* Reduced font size */
+  }
+
+  /* Further reduce skill item size */
+  .skill-item {
+    padding: 0.3rem 0.6rem; /* Reduced padding */
+    font-size: 0.75rem; /* Reduced font size */
+  }
+
+  /* Further adjust image size */
+  .project-image {
+    max-height: 150px; /* Even smaller image height */
+  }
 }
 
-.skill-item:hover {
-  background: #ffb74d;       /* New background on hover */
-  transform: scale(1.05);    /* Slight zoom effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
-}
