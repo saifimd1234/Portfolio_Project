@@ -120,6 +120,7 @@ nav {
   height: 2px;
   background-color: black;
   transition: all 0.3 ease-in-out;
+  transform-origin: center;
 }
 
 .menu-links {
