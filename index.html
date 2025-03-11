@@ -16,8 +16,9 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -36,8 +37,8 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           
@@ -82,376 +83,389 @@
     </section>
     
     <section id="about">
-        <p class="section__text__p1">Get To Know Me</p>
-        <h1 class="title">About Me</h1>
-        <div class="about-container">
-          <div class="about-pic">
-            <img src="./assests/about-pic.png" alt="Profile Picture" />
-          </div>
-          <div class="about-details">
-            <h2>Hi, I'm Mohammad Saifi</h2>
-            <p>
-              I am a passionate Data Analyst with a strong background in Big Data Analytics and Engineering. I hold a Post Graduate Diploma in Big Data Analytics from CDAC Acts, Pune, and my journey has equipped me with advanced skills in SQL, Python, Tableau, and Excel.
-            </p>
-            <p>
-              Beyond technical expertise, I thrive on transforming complex datasets into actionable insights. My projects—from Hospital Quality Analysis to Music Store Data Analysis—demonstrate my ability to uncover hidden trends and drive impactful decisions.
-            </p>
-            <p>
-              I also value teaching, mentoring, and continuous learning, which help me stay ahead in this fast-paced field.
-            </p>
-            <a class="btn btn-color-1" href="./assests/CR_Saifi-Data Analyst-Resume_with_marks_2.pdf" target="_blank">View Resume</a>
-          </div>
+      <p class="section__text__p1">Get To Know Me</p>
+      <h1 class="title">About Me</h1>
+      
+      <!-- Main container for About Section -->
+      <div class="about-main">
+        
+        <!-- Left Column: General Introduction -->
+        <div class="about-intro">
+          <h2>Hi, I'm Mohammad Saifi</h2>
+          <p>
+            a recent engineering graduate with a strong passion for data and analytics. I recently enrolled in a PG Diploma in Big Data Analytics from CDAC Acts, Pune, where I’m expanding my technical expertise in data collection, DBMS, Python, data visualization, and machine learning. My academic projects, certifications in SQL and Python from HackerRank, and hands-on experience with tools like Tableau, Docker, AWS, and CI/CD pipelines have given me a solid foundation in data science. In addition, my previous experience as a Senior Maths Teacher helped me develop strong communication and problem-solving skills, which I believe are essential for data storytelling and presenting insights clearly.
+          </p>
+  
         </div>
-        <img src="./assests/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'" />
-      </section>
+        
+        <!-- Right Column: Educational Qualifications -->
+        <div class="about-education">
+          <h2>Educational Qualification</h2>
+          <ul>
+            <li>
+              <strong>PG Diploma in Big Data Analytics</strong> – Centre of Development and Advance Computing, Pune (03/2024 – 09/2024)
+            </li>
+            <li>
+              <strong>Bachelor of Engineering</strong> – RVS College of Engineering and Technology, Jamshedpur (06/2020 – 07/2023)
+            </li>
+            <li>
+              <strong>Diploma</strong> – Al-Kabir Polytechnic, Jamshedpur (06/2015 – 07/2018)
+            </li>
+            <li>
+              <strong>Matriculate</strong> – Kerela Public School, Jamshedpur (03/2008 – 03/2015)
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+    
+    
       
     
     <section id="skills">
-        <h1 class="title">Skills</h1>
-        <div class="skills-container">
-      
-          <!-- Databases Section -->
-          <div class="skills-box">
-            <h2>
-              Databases 
-              <img src="./assets/database-icon.png" alt="Database Icon" class="skill-icon" />
-            </h2>
-            <div class="sub-skills">
-              <div class="sub-skill">
-                <img src="./assets/mysql1.png" alt="MySQL Icon" class="sub-skill-icon" />
-                <h3>MySQL</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/postgresql.png" alt="PostgreSQL Icon" class="sub-skill-icon" />
-                <h3>PostgreSQL</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/mssql.png" alt="MS SQL Server Icon" class="sub-skill-icon" />
-                <h3>MS SQL Server</h3>
-              </div>
-            </div>
-            <p><strong>Key Skills:</strong> SQL Queries, Joins & Subqueries, Window Functions, Aggregate Functions, Indexing & Optimization, Stored Procedures & Views, CTEs, Data Cleaning & Transformation.</p>
-          </div>
-      
-          <!-- Data Visualization Section -->
-          <div class="skills-box">
-            <h2>
-              Data Visualization
-              <img src="./assets/dashboard.png" alt="Data Viz Icon" class="skill-icon" />
-            </h2>
-            <div class="sub-skills">
-              <div class="sub-skill">
-                <img src="./assets/ms-excel.png" alt="Excel Icon" class="sub-skill-icon" />
-                <h3>Excel</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/tableau.png" alt="Tableau Icon" class="sub-skill-icon" />
-                <h3>Tableau</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/powerbi.png" alt="Power BI Icon" class="sub-skill-icon" />
-                <h3>Power BI</h3>
-              </div>
-            </div>
-            <p><strong>Key Skills:</strong> Pivot Tables, Power Query, Dashboarding, Data Storytelling, Interactive Reports.</p>
-          </div>
-      
-          <!-- Programming & Scripting Section -->
-          <div class="skills-box">
-            <h2>
-              Programming & Scripting
-              <img src="./assets/programming-icon.png" alt="Programming Icon" class="skill-icon" />
-            </h2>
-            <div class="sub-skills">
-                <div class="sub-skill">
-                    <img src="./assets/python.png" alt="Python Icon" class="sub-skill-icon" />
-                    <h3>Python</h3>
+            <h1 class="title">Skills</h1>
+            <div class="skills-container">
+          
+              <!-- Databases Section -->
+              <div class="skills-box">
+                <h2>
+                  Databases 
+                  <img src="./assets/database-icon.png" alt="Database Icon" class="skill-icon" />
+                </h2>
+                <div class="sub-skills">
+                  <div class="sub-skill">
+                    <img src="./assets/mysql1.png" alt="MySQL Icon" class="sub-skill-icon" />
+                    <h3>MySQL</h3>
                   </div>
-              <div class="sub-skill">
-                <img src="./assets/pandas.png" alt="Pandas Icon" class="sub-skill-icon" />
-                <h3>Pandas</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/numpy.png" alt="NumPy Icon" class="sub-skill-icon" />
-                <h3>NumPy</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/matplotlib.png" alt="Matplotlib Icon" class="sub-skill-icon" />
-                <h3>Matplotlib</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/seaborn.png" alt="Seaborn Icon" class="sub-skill-icon" />
-                <h3>Seaborn</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/sklearn.png" alt="Scikit-learn Icon" class="sub-skill-icon" />
-                <h3>Scikit-learn</h3>
-              </div>
-            </div>
-            <p><strong>Key Skills:</strong> Data Manipulation, Data Visualization, Statistical Analysis, Machine Learning Basics.</p>
-          </div>
-      
-          <!-- Cloud & Version Control Section -->
-          <div class="skills-box">
-            <h2>
-              Cloud & Version Control
-              <img src="./assets/cloud-icon.png" alt="Cloud Icon" class="skill-icon" />
-            </h2>
-            <div class="sub-skills">
-              <div class="sub-skill">
-                <img src="./assets/aws.png" alt="AWS Icon" class="sub-skill-icon" />
-                <h3>AWS</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/git.png" alt="Git Icon" class="sub-skill-icon" />
-                <h3>Git</h3>
-              </div>
-              <div class="sub-skill">
-                <img src="./assets/github.png" alt="GitHub Icon" class="sub-skill-icon" />
-                <h3>GitHub</h3>
-              </div>
-            </div>
-            <p><strong>Key Skills:</strong> Cloud Basics, Version Control, Code Collaboration.</p>
-          </div>
-      
-        
-      <!-- Communication & Other Skills Section -->
-<!-- <div class="skills-box">
-    <h2>
-      Communication & Other Skills
-      <img src="./assets/communication-icon.png" alt="Communication Icon" class="skill-icon" />
-    </h2>
-    <div class="sub-skills">
-      <div class="sub-skill">
-        <img src="./assets/communication.png" alt="Communication Icon" class="sub-skill-icon" />
-        <h3>Business Communication</h3>
-      </div>
-      <div class="sub-skill">
-        <img src="./assets/presentation.png" alt="Presentation Icon" class="sub-skill-icon" />
-        <h3>Presentation & Storytelling</h3>
-      </div>
-      <div class="sub-skill">
-        <img src="./assets/critical-thinking.png" alt="Critical Thinking Icon" class="sub-skill-icon" />
-        <h3>Critical Thinking</h3>
-      </div>
-      <div class="sub-skill">
-        <img src="./assets/teamwork.png" alt="Teamwork Icon" class="sub-skill-icon" />
-        <h3>Team Collaboration</h3>
-      </div>
-      <div class="sub-skill">
-        <img src="./assets/time-management.png" alt="Time Management Icon" class="sub-skill-icon" />
-        <h3>Time Management</h3>
-      </div>
-      <div class="sub-skill">
-        <img src="./assets/adaptability.png" alt="Adaptability Icon" class="sub-skill-icon" />
-        <h3>Adaptability</h3>
-      </div>
-    </div>
-    <p><strong>Key Skills:</strong> Communication, Data Storytelling, Problem-Solving, Stakeholder Interaction, Collaboration, Time Management, Continuous Learning.</p>
-  </div> -->
-</div>
-</section>
-    
-    
-<section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-container">
-      <!-- Experience Item Template -->
-      <div class="experience-item">
-        <h2 class="experience-role">Subject Matter Expert (SME)</h2>
-        <h3 class="experience-company">Brainly, Virtual</h3>
-        <p class="experience-duration">Jun 2023 - Jan 2024</p>
-        <ul class="experience-details">
-          <li>Reviewed and corrected AI-provided solutions.</li>
-          <li>Identified errors and ensured solution accuracy.</li>
-        </ul>
-      </div>
-      <!-- Another Experience Item -->
-      <div class="experience-item">
-        <h2 class="experience-role">Senior Teacher</h2>
-        <h3 class="experience-company">Kids International School, Jamshedpur</h3>
-        <p class="experience-duration">Jan 2023 - Dec 2023</p>
-        <ul class="experience-details">
-          <li>Conducted classroom discussions and enhanced learning.</li>
-          <li>Prepared lesson plans and managed academic assessments.</li>
-        </ul>
-      </div>
-      <!-- Add additional experience-item blocks as needed -->
-    </div>
-    <img src="./assests/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    
-    <!-- Main container for all projects -->
-    <div class="project-template">
-      
-      <!-- Single Project Container -->
-      <div class="project fade-in">
-        
-        <!-- Phishing Website Detection -->
-        <div class="project-title">
-          <h2>Phishing Website Detection 🛡️</h2>
-        </div>
-        
-        <!-- Project Image -->
-        <div class="project-image">
-          <img src="Projects_intro\network_security\network_security1.jpeg" alt="Phishing Website Detection">
-        </div>
-        
-        <!-- Project Brief Description -->
-        <div class="project-description">
-          <p>
-            An end-to-end machine learning project that identifies phishing websites by analyzing various URL-based features. The project implements a robust ML pipeline—from data ingestion and validation to transformation, model training, and deployment—ensuring a scalable, production-ready solution for real-time phishing detection.
-          </p>
-        </div>
-        
-        <!-- Skills Covered -->
-        <div class="project-skills">
-          <h3>Skills Covered:</h3>
-          <div class="skill-list">
-            <!-- These skill items can be added or removed as needed -->
-            <div class="skill-item">Machine Learning</div>    
-                <div class="skill-item">Python</div>  
-                <div class="skill-item">Pandas & NumPy</div>  
-                <div class="skill-item">Scikit-learn</div>
-                <div class="skill-item">Model Deployment (Flask/FastAPI)</div>  
-                <div class="skill-item">XGBoost</div>  
-                <div class="skill-item">Docker</div>  
-                <div class="skill-item">AWS S3</div>
-                <div class="skill-item">AWS ECR</div>
-                <div class="skill-item">AWS EC2</div>  
-                <div class="skill-item">CI/CD (GitHub Actions)</div>  
-                <div class="skill-item">Data Preprocessing</div>  
-                <div class="skill-item">Feature Engineering</div>  
-                <div class="skill-item">Hyperparameter Tuning</div>  
-                <div class="skill-item">Classification Algorithms</div>  
-                <div class="skill-item">Cybersecurity Analytics</div>  
-                <div class="skill-item">Phishing Detection</div>  
-                <div class="skill-item">Data Visualization</div>  
-                <div class="skill-item">Git Version Control</div>  
-                <div class="skill-item">Automated Data Validation</div>  
-            <!-- Add more skill items as required -->
-          </div>
-        </div>
-        
-        <!-- Buttons for GitHub and In-Depth details -->
-        <div class="project-buttons">
-          <button class="btn btn-color-2" onclick="location.href='https://github.com/saifimd1234/ML_network_security'">GitHub</button>
-          <button class="btn btn-color-2" onclick="location.href='in-depth-page.html'">In Depth</button>
-        </div>
-        
-      </div>
-      <!-- End of Single Project Container -->
-      
-      <!-- Repeat the above .project div for each additional project -->
-      
-    </div>
-    
-  </section>
-  
-      
-  <section id="certifications">
-    <p class="section__text__p1">Showcase My</p>
-    <h1 class="title">Certifications</h1>
-  
-    <!-- Main container for all certifications -->
-    <div class="certifications-main">
-  
-      <!-- Single Certification Container -->
-      <div class="certification fade-in">
-        
-        <!-- Certificate Image -->
-        <div class="certification-image">
-          <img src="Certifications\sql_basic certificate.png" alt="Certificate Image">
-        </div>
-  
-        <!-- Certificate Title -->
-        <div class="certification-title">
-          <h2>SQL (Basic) Certificate</h2>
-        </div>
-  
-        <!-- Skills Covered -->
-        <div class="certification-skills">
-          <h3>Skills Covered:</h3>
-          <div class="skill-list">
-            <div class="skill-item">Simple Queries</div>
-            <div class="skill-item">Relationships</div>
-            <div class="skill-item">Aggregations</div>
-            <!-- Add more skill items as needed -->
-          </div>
-        </div>
-  
-        <!-- Certification Button -->
-        <div class="certification-button">
-          <button class="btn btn-color-2" onclick="location.href='https://www.hackerrank.com/certificates/e03b5eaac371'">View Certificate</button>
-        </div>
-      </div>
-      <!-- End of Single Certification Container -->
-      
-            <!-- Second Certification Container -->
-            <div class="certification fade-in">
-        
-              <!-- Certificate Image -->
-              <div class="certification-image">
-                <img src="Certifications\sql_intermediate certificate.png" alt="Certificate Image">
-              </div>
-        
-              <!-- Certificate Title -->
-              <div class="certification-title">
-                <h2>SQL (Intermediate) Certificate</h2>
-              </div>
-        
-              <!-- Skills Covered -->
-              <div class="certification-skills">
-                <h3>Skills Covered:</h3>
-                <div class="skill-list">
-                  <div class="skill-item">Complex Joins</div>
-                  <div class="skill-item">Unions</div>
-                  <div class="skill-item">Sub-Queires</div>
-                  <!-- Add more skill items as needed -->
+                  <div class="sub-skill">
+                    <img src="./assets/postgresql.png" alt="PostgreSQL Icon" class="sub-skill-icon" />
+                    <h3>PostgreSQL</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/mssql.png" alt="MS SQL Server Icon" class="sub-skill-icon" />
+                    <h3>MS SQL Server</h3>
+                  </div>
                 </div>
+                <p><strong>Key Skills:</strong> SQL Queries, Joins & Subqueries, Window Functions, Aggregate Functions, Indexing & Optimization, Stored Procedures & Views, CTEs, Data Cleaning & Transformation.</p>
               </div>
+          
+              <!-- Data Visualization Section -->
+              <div class="skills-box">
+                <h2>
+                  Data Visualization
+                  <img src="./assets/dashboard.png" alt="Data Viz Icon" class="skill-icon" />
+                </h2>
+                <div class="sub-skills">
+                  <div class="sub-skill">
+                    <img src="./assets/ms-excel.png" alt="Excel Icon" class="sub-skill-icon" />
+                    <h3>Excel</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/tableau.png" alt="Tableau Icon" class="sub-skill-icon" />
+                    <h3>Tableau</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/powerbi.png" alt="Power BI Icon" class="sub-skill-icon" />
+                    <h3>Power BI</h3>
+                  </div>
+                </div>
+                <p><strong>Key Skills:</strong> Pivot Tables, Power Query, Dashboarding, Data Storytelling, Interactive Reports.</p>
+              </div>
+          
+              <!-- Programming & Scripting Section -->
+              <div class="skills-box">
+                <h2>
+                  Programming & Scripting
+                  <img src="./assets/programming-icon.png" alt="Programming Icon" class="skill-icon" />
+                </h2>
+                <div class="sub-skills">
+                    <div class="sub-skill">
+                        <img src="./assets/python.png" alt="Python Icon" class="sub-skill-icon" />
+                        <h3>Python</h3>
+                      </div>
+                  <div class="sub-skill">
+                    <img src="./assets/pandas.png" alt="Pandas Icon" class="sub-skill-icon" />
+                    <h3>Pandas</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/numpy.png" alt="NumPy Icon" class="sub-skill-icon" />
+                    <h3>NumPy</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/matplotlib.png" alt="Matplotlib Icon" class="sub-skill-icon" />
+                    <h3>Matplotlib</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/seaborn.png" alt="Seaborn Icon" class="sub-skill-icon" />
+                    <h3>Seaborn</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/sklearn.png" alt="Scikit-learn Icon" class="sub-skill-icon" />
+                    <h3>Scikit-learn</h3>
+                  </div>
+                </div>
+                <p><strong>Key Skills:</strong> Data Manipulation, Data Visualization, Statistical Analysis, Machine Learning Basics.</p>
+              </div>
+          
+              <!-- Cloud & Version Control Section -->
+              <div class="skills-box">
+                <h2>
+                  Cloud & Version Control
+                  <img src="./assets/cloud-icon.png" alt="Cloud Icon" class="skill-icon" />
+                </h2>
+                <div class="sub-skills">
+                  <div class="sub-skill">
+                    <img src="./assets/aws.png" alt="AWS Icon" class="sub-skill-icon" />
+                    <h3>AWS</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/git.png" alt="Git Icon" class="sub-skill-icon" />
+                    <h3>Git</h3>
+                  </div>
+                  <div class="sub-skill">
+                    <img src="./assets/github.png" alt="GitHub Icon" class="sub-skill-icon" />
+                    <h3>GitHub</h3>
+                  </div>
+                </div>
+                <p><strong>Key Skills:</strong> Cloud Basics, Version Control, Code Collaboration.</p>
+              </div>
+          
+            
+          <!-- Communication & Other Skills Section -->
+    <!-- <div class="skills-box">
+        <h2>
+          Communication & Other Skills
+          <img src="./assets/communication-icon.png" alt="Communication Icon" class="skill-icon" />
+        </h2>
+        <div class="sub-skills">
+          <div class="sub-skill">
+            <img src="./assets/communication.png" alt="Communication Icon" class="sub-skill-icon" />
+            <h3>Business Communication</h3>
+          </div>
+          <div class="sub-skill">
+            <img src="./assets/presentation.png" alt="Presentation Icon" class="sub-skill-icon" />
+            <h3>Presentation & Storytelling</h3>
+          </div>
+          <div class="sub-skill">
+            <img src="./assets/critical-thinking.png" alt="Critical Thinking Icon" class="sub-skill-icon" />
+            <h3>Critical Thinking</h3>
+          </div>
+          <div class="sub-skill">
+            <img src="./assets/teamwork.png" alt="Teamwork Icon" class="sub-skill-icon" />
+            <h3>Team Collaboration</h3>
+          </div>
+          <div class="sub-skill">
+            <img src="./assets/time-management.png" alt="Time Management Icon" class="sub-skill-icon" />
+            <h3>Time Management</h3>
+          </div>
+          <div class="sub-skill">
+            <img src="./assets/adaptability.png" alt="Adaptability Icon" class="sub-skill-icon" />
+            <h3>Adaptability</h3>
+          </div>
+        </div>
+        <p><strong>Key Skills:</strong> Communication, Data Storytelling, Problem-Solving, Stakeholder Interaction, Collaboration, Time Management, Continuous Learning.</p>
+      </div> -->
+    </div>
+    </section>
         
-              <!-- Certification Button -->
-              <div class="certification-button">
-                <button class="btn btn-color-2" onclick="location.href='https://www.hackerrank.com/certificates/d506db408f74'">View Certificate</button>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <!-- Main container for all projects -->
+      <div class="project-template">
+        
+        <!-- Single Project Container -->
+        <div class="project fade-in">
+          
+          <!-- Phishing Website Detection -->
+          <div class="project-title">
+            <h2>Phishing Website Detection 🛡️</h2>
+          </div>
+          
+          <!-- Project Image -->
+          <div class="project-image">
+            <img src="Projects_intro\network_security\network_security1.jpeg" alt="Phishing Website Detection">
+          </div>
+          
+          <!-- Project Brief Description -->
+          <div class="project-description">
+            <p>
+              An end-to-end machine learning project that identifies phishing websites by analyzing various URL-based features. The project implements a robust ML pipeline—from data ingestion and validation to transformation, model training, and deployment—ensuring a scalable, production-ready solution for real-time phishing detection.
+            </p>
+          </div>
+          
+          <!-- Skills Covered -->
+          <div class="project-skills">
+            <h3>Skills Covered:</h3>
+            <div class="skill-list">
+              <!-- These skill items can be added or removed as needed -->
+              <div class="skill-item">Machine Learning</div>    
+                  <div class="skill-item">Python</div>  
+                  <div class="skill-item">Pandas & NumPy</div>  
+                  <div class="skill-item">Scikit-learn</div>
+                  <div class="skill-item">Model Deployment (Flask/FastAPI)</div>  
+                  <div class="skill-item">XGBoost</div>  
+                  <div class="skill-item">Docker</div>  
+                  <div class="skill-item">AWS S3</div>
+                  <div class="skill-item">AWS ECR</div>
+                  <div class="skill-item">AWS EC2</div>  
+                  <div class="skill-item">CI/CD (GitHub Actions)</div>  
+                  <div class="skill-item">Data Preprocessing</div>  
+                  <div class="skill-item">Feature Engineering</div>  
+                  <div class="skill-item">Hyperparameter Tuning</div>  
+                  <div class="skill-item">Classification Algorithms</div>  
+                  <div class="skill-item">Cybersecurity Analytics</div>  
+                  <div class="skill-item">Phishing Detection</div>  
+                  <div class="skill-item">Data Visualization</div>  
+                  <div class="skill-item">Git Version Control</div>  
+                  <div class="skill-item">Automated Data Validation</div>  
+              <!-- Add more skill items as required -->
+            </div>
+          </div>
+          
+          <!-- Buttons for GitHub and In-Depth details -->
+          <div class="project-buttons">
+            <button class="btn btn-color-2" onclick="location.href='https://github.com/saifimd1234/ML_network_security'">GitHub</button>
+            <button class="btn btn-color-2" onclick="location.href='in-depth-page.html'">In Depth</button>
+          </div>
+          
+        </div>
+        <!-- End of Single Project Container -->
+        
+        <!-- Repeat the above .project div for each additional project -->
+        
+      </div>
+      
+  </section> 
+    
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+          <!-- Experience Item Template -->
+          <div class="experience-item">
+            <h2 class="experience-role">Subject Matter Expert (SME)</h2>
+            <h3 class="experience-company">Brainly, Virtual</h3>
+            <p class="experience-duration">Jun 2023 - Jan 2024</p>
+            <ul class="experience-details">
+              <li>Reviewed and corrected AI-provided solutions.</li>
+              <li>Identified errors and ensured solution accuracy.</li>
+            </ul>
+          </div>
+          <!-- Another Experience Item -->
+          <div class="experience-item">
+            <h2 class="experience-role">Senior Teacher</h2>
+            <h3 class="experience-company">Kids International School, Jamshedpur</h3>
+            <p class="experience-duration">Jan 2023 - Dec 2023</p>
+            <ul class="experience-details">
+              <li>Conducted classroom discussions and enhanced learning.</li>
+              <li>Prepared lesson plans and managed academic assessments.</li>
+            </ul>
+          </div>
+          <!-- Add additional experience-item blocks as needed -->
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+          
+    <section id="certifications">
+        <p class="section__text__p1">Showcase My</p>
+        <h1 class="title">Certifications</h1>
+      
+        <!-- Main container for all certifications -->
+        <div class="certifications-main">
+      
+          <!-- Single Certification Container -->
+          <div class="certification fade-in">
+            
+            <!-- Certificate Image -->
+            <div class="certification-image">
+              <img src="Certifications\sql_basic certificate.png" alt="Certificate Image">
+            </div>
+      
+            <!-- Certificate Title -->
+            <div class="certification-title">
+              <h2>SQL (Basic) Certificate</h2>
+            </div>
+      
+            <!-- Skills Covered -->
+            <div class="certification-skills">
+              <h3>Skills Covered:</h3>
+              <div class="skill-list">
+                <div class="skill-item">Simple Queries</div>
+                <div class="skill-item">Relationships</div>
+                <div class="skill-item">Aggregations</div>
+                <!-- Add more skill items as needed -->
               </div>
             </div>
-            <!-- End of Second Certification Container -->
-
-      <!-- Duplicate the above .certification div for each new certification -->
-  
-    </div>
-  </section>
-  
       
+            <!-- Certification Button -->
+            <div class="certification-button">
+              <button class="btn btn-color-2" onclick="location.href='https://www.hackerrank.com/certificates/e03b5eaac371'">View Certificate</button>
+            </div>
+          </div>
+          <!-- End of Single Certification Container -->
+          
+                <!-- Second Certification Container -->
+                <div class="certification fade-in">
+            
+                  <!-- Certificate Image -->
+                  <div class="certification-image">
+                    <img src="Certifications\sql_intermediate certificate.png" alt="Certificate Image">
+                  </div>
+            
+                  <!-- Certificate Title -->
+                  <div class="certification-title">
+                    <h2>SQL (Intermediate) Certificate</h2>
+                  </div>
+            
+                  <!-- Skills Covered -->
+                  <div class="certification-skills">
+                    <h3>Skills Covered:</h3>
+                    <div class="skill-list">
+                      <div class="skill-item">Complex Joins</div>
+                      <div class="skill-item">Unions</div>
+                      <div class="skill-item">Sub-Queires</div>
+                      <!-- Add more skill items as needed -->
+                    </div>
+                  </div>
+            
+                  <!-- Certification Button -->
+                  <div class="certification-button">
+                    <button class="btn btn-color-2" onclick="location.href='https://www.hackerrank.com/certificates/d506db408f74'">View Certificate</button>
+                  </div>
+                </div>
+                <!-- End of Second Certification Container -->
+
+          <!-- Duplicate the above .certification div for each new certification -->
+      
+        </div>
+    </section>
+      
+          
 
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:saifimd1234@gmail.com">saifimd1234gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+          </div>
     </section>
 
     <footer>
@@ -459,8 +473,10 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>

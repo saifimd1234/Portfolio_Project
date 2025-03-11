@@ -1,104 +1,209 @@
+/***********************************/
+/*       MEDIA QUERIES             */
+/***********************************/
+
+/* For screens up to 1400px */
+/* EXPERIENCE, PROJECTS, AND CERTIFICATIONS - LAPTOP VIEW PADDING */
+@media screen and (min-width: 1200px) {
+  /* This applies to sections that are already defined with an ID */
+  #experience,
+  #projects,
+  #certifications {
+    margin: 0 auto;          /* Centers the section */
+    max-width: 1200px;       /* Limits the content width */
+    padding: 2rem 5%;        /* Adds 5% left/right padding and 2rem top/bottom */
+  }
+}
+
+
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
-  }
+  h1 { font-size: 3rem; }    /* Slightly reduced from default (3.2rem) */
+  h2 { font-size: 2.2rem; }   /* Adjust as desired */
+  h3 { font-size: 1.8rem; }
+  h4 { font-size: 1.6rem; }
+  p  { font-size: 1.1rem; }
   
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+  .about-containers {
+    flex-wrap: wrap;
   }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+/* For screens up to 1200px */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+  /* GENERAL RESPONSIVE TYPOGRAPHY */
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.3rem; }
+  p  { font-size: 1rem; }
   
+  /* RESPONSIVE SKILLS SECTION */
+  #skills .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills .skills-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  #skills .skills-box h2 {
+    font-size: 1.8rem;
+  }
+  #skills .skill-icon {
+    width: 30px;
+    height: 30px;
+  }
+  #skills .sub-skill h3 {
+    font-size: 1rem;
+  }
+  #skills .sub-skill-icon {
+    width: 25px;
+    height: 25px;
+  }
+  #skills p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For screens up to 600px */
+@media screen and (max-width: 600px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.4rem; }
+  h4 { font-size: 1.2rem; }
+  p  { font-size: 0.9rem; }
+  
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+
+/* DEFAULT: Large Screens (Horizontal Layout) */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For screens up to 1200px: Allow wrapping if needed */
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    flex-wrap: wrap; 
+    gap: 1rem;
+  }
+}
+
+/* For screens up to 768px: Switch to a vertical (column) layout */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+}
+
+/* For screens up to 480px: Further adjustments (reduce gap and font-size) */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
