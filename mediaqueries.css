@@ -157,6 +157,7 @@
     text-align: center;
   }
   .section__pic-container {
+    padding-top: 2.5rem;
     width: auto;
     height: 46vw;
     justify-content: center;
