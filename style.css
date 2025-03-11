@@ -366,7 +366,7 @@ nav {
 
 /* Container for the entire About section */
 #about {
-  padding: 2rem 5%;              /* 5% left/right padding so content doesn't touch the screen edges */
+  padding: 1rem 5%;              /* 5% left/right padding so content doesn't touch the screen edges */
   background-color: #f2f2f2;       /* Subtle grey background for the section */
 }
 
@@ -384,6 +384,7 @@ nav {
 #about .about-intro {
   flex: 1;
   padding: 0.5rem;
+  background-color: #f9f9f9;
 }
 
 /* Right Column: Educational Qualification */
