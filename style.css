@@ -372,9 +372,9 @@ nav {
 /* Main flex container inside About section */
 #about .about-main {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   background-color: #ffffff;     /* White background for the inner container */
-  padding: 2rem;                 /* Internal padding for spacing */
+  padding: 1rem;                 /* Internal padding for spacing */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a card-like appearance */
 }
@@ -382,13 +382,13 @@ nav {
 /* Left Column: Introduction */
 #about .about-intro {
   flex: 1;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* Right Column: Educational Qualification */
 #about .about-education {
   flex: 1;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #f9f9f9;       /* Slight grey background for this column */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -426,7 +426,7 @@ nav {
   }
   #about .about-intro h2,
   #about .about-education h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   #about p {
     font-size: 0.9rem;
@@ -540,6 +540,7 @@ nav {
 }
 
 .project-description p {
+  padding-top: 2rem;
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
@@ -697,12 +698,12 @@ article .icon {
 }
 
 .experience-role {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   margin-bottom: 0.5rem;
 }
 
 .experience-company {
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   color: #333;
 }
 
@@ -855,13 +856,54 @@ article .icon {
 
 /* FOOTER */
 footer {
-  height: 26vh;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Add a subtle gradient accent at the top of the footer */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #ffb74d, #fff, #ffb74d);
+}
+
+/* Footer Navigation Styling */
+footer nav .nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+footer nav .nav-links li {
   margin: 0 1rem;
 }
 
-footer p {
-  text-align: center;
+footer nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
+
+footer nav .nav-links li a:hover {
+  color: #ffb74d;
+}
+
+/* Footer Text */
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 768px) {
@@ -905,7 +947,7 @@ footer p {
   }
   .project-image {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 350px;
   }
 }
 
@@ -929,6 +971,6 @@ footer p {
     font-size: 0.85rem;
   }
   .project-image {
-    max-height: 150px;
+    max-height: 350px;
   }
 }
