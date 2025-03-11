@@ -573,6 +573,7 @@ nav {
 
 #projects .project.fade-in {
   animation: fadeIn 1s forwards;
+  margin-left: 150px;
 }
 
 @keyframes fadeIn {
@@ -976,16 +977,18 @@ footer p {
     max-height: 350px;
   }
 }
+
 /* Left Navigation Buttons - Sticks to Project Section */
 .left-nav {
   position: absolute;
-  left: -160px; /* Moves it just outside the project container */
+  left: 10px; /* Move buttons closer to projects */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 
 /* Button Styling from Uiverse.io */
 .box {
@@ -1005,6 +1008,8 @@ footer p {
   cursor: pointer;
   border: none;
   outline: none;
+  font-size: 14px; /* Adjust font size to fit in the button */
+  white-space: nowrap; /* Prevents text from breaking into a new line */
 }
 
 
