@@ -1,1 +1,144 @@
-<iframe width="1050" height="550" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4EFE511DBC84EC7B%214049&authkey=%21AOBt4LNB8XdLHJg&em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Dynamic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom overrides for Blinkit page */
+        #blinkit-main {
+            padding: 2rem 5%;
+            background-color: #f9f9f9;
+        }
+
+        .blinkit-section {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .blinkit-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .blinkit-section p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Dashboard iframe styling */
+        .dashboard-iframe {
+            width: 100%;
+            height: 90vh;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+        }
+
+        /* List styling */
+        .blinkit-section ul {
+            padding-left: 2rem;
+            list-style: disc;
+        }
+
+        .blinkit-section li {
+            margin-bottom: 1rem;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        /* Footer override */
+        #blinkit-footer {
+            background: #000;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Reuse your existing nav component) -->
+    <nav>
+        <div class="logo">Your Logo</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="blinkit-main">
+        <!-- Project Header -->
+        <section class="blinkit-section" style="background: none; border: none; box-shadow: none;">
+            <h1 class="title" style="font-size: 3.2rem;">Blinkit Dynamic Dashboard</h1>
+            <p class="section__text__p1" style="text-align: center; font-size: 1.25rem;">
+                Interactive Excel Dashboard for Sales Analytics
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section class="blinkit-section">
+            <h2>About the Project</h2>
+            <p>
+                This Excel dashboard analyzes Blinkit's sales data using pivot tables, slicers, and dynamic visualizations. 
+                Features include real-time KPI tracking, interactive filters, and brand-aligned design.
+            </p>
+        </section>
+
+        <!-- Dashboard Embed -->
+        <section class="blinkit-section">
+            <h2>Interactive Dashboard</h2>
+            <iframe class="dashboard-iframe" 
+                    src="https://onedrive.live.com/embed?resid=4EFE511DBC84EC7B%214049&authkey=%21AOBt4LNB8XdLHJg&em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
+            </iframe>
+        </section>
+
+        <!-- Key Features -->
+        <section class="blinkit-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Data Standardization:</strong> Cleaned raw data using Excel’s table formatting</li>
+                <li><strong>Dynamic KPIs:</strong> Total sales, average ratings, and item count metrics</li>
+                <li><strong>Interactive Filters:</strong> Slicers for outlet size, location tier, and item type</li>
+                <li><strong>Visual Analytics:</strong> Donut charts for fat content, line charts for sales trends</li>
+            </ul>
+            
+            <div class="btn-container" style="margin-top: 2rem;">
+                <button class="btn btn-color-1" onclick="window.open('#')">GitHub</button>
+                <button class="btn btn-color-2" onclick="window.open('#')">Case Study</button>
+            </div>
+        </section>
+
+        <!-- Enhancements Section -->
+        <section class="blinkit-section">
+            <h2>Future Enhancements</h2>
+            <ul>
+                <li>Live API data integration for real-time updates</li>
+                <li>Advanced chart types like heatmaps and scatter plots</li>
+                <li>Mobile-responsive dashboard version</li>
+                <li>User-customizable KPI panels</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer (Reuse your existing footer component) -->
+    <footer id="blinkit-footer">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+                <li><a href="https://github.com/yourprofile">GitHub</a></li>
+                <li><a href="https://yourportfolio.com">Portfolio</a></li>
+            </ul>
+        </nav>
+        <p>© 2023 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
