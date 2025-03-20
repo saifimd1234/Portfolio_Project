@@ -46,17 +46,18 @@ nav,
 nav {
   position: sticky;
   top: 0;
-  background-color: #ffffff; /* Darker green shade */
+  background-color: #ffffff;
   color: #000000;
-  padding: 1rem;
-  display: flex;
+  padding: 0.5rem;
+  display: flex
+;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   z-index: 1000;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   justify-content: space-around;
   align-items: center;
-  height: 13vh;
+  height: 9vh;
 }
 
 .nav-links {
@@ -583,7 +584,6 @@ nav {
 
 #projects .project.fade-in {
   animation: fadeIn 1s forwards;
-  margin-left: 150px;
 }
 
 @keyframes fadeIn {
@@ -917,6 +917,39 @@ footer p {
   font-size: 0.9rem;
 }
 
+/* Footer Navigation Overrides */
+footer nav {
+  position: static;                /* Remove sticky positioning */
+  background-color: #000000;   /* Inherit footer background (black) */
+  padding: 0;
+  gap: 0;
+  box-shadow: none;
+  height: auto;
+}
+
+footer nav .nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+footer nav .nav-links li {
+  margin: 0 1rem;
+}
+
+footer nav .nav-links li a {
+  color: #fff;                     /* White text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer nav .nav-links li a:hover {
+  color: #ffb74d;
+  transform: translateY(-2px);
+}
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 768px) {
@@ -986,89 +1019,4 @@ footer p {
   .project-image {
     max-height: 350px;
   }
-}
-
-/* Left Navigation Buttons - Sticks to Project Section */
-.left-nav {
-  position: absolute;
-  left: 10px; /* Move buttons closer to projects */
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-
-/* Button Styling from Uiverse.io */
-.box {
-  width: 140px;
-  height: 50px; /* Set a fixed height for proper centering */
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Centers text horizontally */
-  align-items: center; /* Centers text vertically */
-  transition: .5s linear;
-  position: relative;
-  overflow: hidden;
-  padding: 15px;
-  text-align: center;
-  background: transparent;
-  text-transform: uppercase;
-  font-weight: 900;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: 14px; /* Adjust font size to fit in the button */
-  white-space: nowrap; /* Prevents text from breaking into a new line */
-}
-
-
-.box:before {
-position: absolute;
-content: '';
-left: 0;
-bottom: 0;
-height: 4px;
-width: 100%;
-border-bottom: 4px solid transparent;
-border-left: 4px solid transparent;
-box-sizing: border-box;
-transform: translateX(100%);
-}
-
-.box:after {
-position: absolute;
-content: '';
-top: 0;
-left: 0;
-width: 100%;
-height: 4px;
-border-top: 4px solid transparent;
-border-right: 4px solid transparent;
-box-sizing: border-box;
-transform: translateX(-100%);
-}
-
-.box:hover {
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.box:hover:before {
-border-color: #262626;
-height: 100%;
-transform: translateX(0);
-transition: .3s transform linear, .3s height linear .3s;
-}
-
-.box:hover:after {
-border-color: #262626;
-height: 100%;
-transform: translateX(0);
-transition: .3s transform linear, .3s height linear .5s;
-}
-
-button {
-color: black;
-text-decoration: none;
-background: transparent;
 }
